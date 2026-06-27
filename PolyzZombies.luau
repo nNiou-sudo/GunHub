@@ -21,6 +21,6 @@ while true do
 	vars:SetAttribute("Stamina", 100)
     vars:SetAttribute("Haste_Perk", true)
 	end
-	
+end	
     task.wait(0.1)
 end
