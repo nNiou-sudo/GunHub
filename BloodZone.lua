@@ -11,7 +11,7 @@ UI.AddTab("Blood Zone", function(tab)
     gun:Toggle("force_auto", "Force Full Auto", false)
     gun:SliderFloat("shoot_time", "Fire Rate", 0.01, 1.0, 0.5, "%.2f")
     gun:SliderInt("num_shots", "Bullets", 1, 20, 1)
-	  gun:SliderFloat("swing_time", "Swing Time", 0.01, 1.0, 1.0, "%.2f")
+	gun:SliderFloat("swing_time", "Swing Time", 0.01, 1.0, 1.0, "%.2f")
 
     -- Player Section
     local player_sec = tab:Section("Player", "Right")
@@ -54,7 +54,7 @@ while true do
             end
 
             if s:FindFirstChild("SwingTimer") then 
-				        s.SwingTimer.Value = UI.GetValue("swing_time")
+				s.SwingTimer.Value = UI.GetValue("swing_time")
             end
         end
     end
