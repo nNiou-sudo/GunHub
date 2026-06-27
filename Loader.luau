@@ -2,13 +2,11 @@ local placeId = game.PlaceId
 
 local function loadScriptForPlaceId(placeId)
     if placeId == 13955927965 then
-        -- Replace with your actual loadstring code for this PlaceId
         loadstring(game:HttpGet("https://raw.githubusercontent.com/nNiou-sudo/GunHub/refs/heads/Games/BloodZone.luau"))()
-    elseif placeId == 87654321 then
-        -- Replace with your actual loadstring code for this PlaceId
-        loadstring("print('This is PlaceId 87654321')")()
+    elseif placeId == 114291906728616 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nNiou-sudo/GunHub/refs/heads/Games/PolyzZombies.luau"))()
     else
-        print("No script for this PlaceId: " .. placeId)
+        notify("No script for this Game!", "Place ID not found", 10)
     end
 end
 
